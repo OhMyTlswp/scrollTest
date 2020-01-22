@@ -54,3 +54,29 @@ body {
   color: white;
   font: bold;
 }
+
+.slider {
+  margin-top: 5vh;
+  width: 300vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  transition-duration: .9s;
+  overflow-x: hidden;
+}
+
+.slider-element {
+  display: block;
+  margin-left: 5vw;
+  height: 100%;
+  transition-duration: .5s;
+}
+
+.slider-element:hover {
+  transform: scale(0.9);
+}
+
+.slider-box {
+  width: 100%;
+  overflow: hidden;
+}
