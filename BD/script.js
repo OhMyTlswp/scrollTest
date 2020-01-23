@@ -2,16 +2,17 @@ var imgBox = document.getElementById('img-box'),
   main = document.querySelector('.main'),
   body = document.querySelector('body'),
   sliderElement = document.querySelectorAll('.slider'),
+  sliderBox = document.querySelector('.slider-box'),
   rotaion = document.querySelector('.rotation');
 sliderElement[1].style.transform = 'translateX(' + -1600 + 'px)';
-imgBox.style
 window.pageXOffset = 0;
 imgBoxHeight = imgBox.offsetHeight
 window.addEventListener('scroll', function() {
   if (window.pageYOffset > 50) {
     if (window.pageYOffset < 250) {
       //window.pageXOffset = 0;
-      imgBox.style.transform = 'translateY(' + window.pageYOffset + 'px) scale(' + 50 / window.pageYOffset + ')';
+      imgBox.style.transform = 'translateY(-' + window.pageYOffset + 'px)';
+      //sliderBox.style.transform = 'translateY(' + (window.pageYOffset / 5) + 'vh)';
     }
     //imgBox.style.transform = 'scale(' + 50 / window.pageYOffset + ')';
   }
