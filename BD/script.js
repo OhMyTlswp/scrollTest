@@ -25,10 +25,10 @@ window.addEventListener('scroll', function() {
   sliderElement[2].style.transform = 'translateX(' + -window.pageYOffset / 60 + 'vw)';
 });
 window.addEventListener('scroll', function() {
-  if (window.pageYOffset > 100 && window.pageYOffset < 1500) {
+  if (window.pageYOffset > 100 && window.pageYOffset < 1450) {
     rotaion.style.transform = 'scale(' + window.pageYOffset / 2800 + ') rotateZ(-' + (window.pageYOffset / 800) + 'deg)';
   }
-  if (window.pageYOffset > 1500) {
+  if (window.pageYOffset > 1450) {
     rotaion.style.transform = 'scale(' + 0.7 + ') rotateZ(' + (0) + 'deg)';
   }
 });
